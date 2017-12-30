@@ -1,0 +1,20 @@
+h1 {
+    margin: auto;
+}
+
+.labels {
+    font-weight: bold;
+}
+
+#title {
+    text-align: center;
+    margin: 20px;
+}
+
+.table {
+    text-align: center;
+}
+
+.container {
+    overflow: auto;
+}

@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+
+<h1 id="title">Top Ten Cryptocurrencies</h1>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Price(USD)</th>
+                    <th>Price(BTC)</th>
+                    <th>% Change(1h)</th>
+                    <th>% Change(24h)</th>
+                    <th>% Change(7d)</th>
+
+                </tr>
+            </thead>
+        <% data.forEach(function(coin) { %>
+            <tbody>
+                <tr>
+                    <td><strong><%= coin['rank']%></strong></td>
+                    <td><strong><%= coin['name'] %></strong></td>
+                    <td>$<%= coin['price_usd']%></td>
+                    <td><%= coin['price_btc']%></td>
+                    <td><%= coin['percent_change_1h']%>%</td>
+                    <td><%= coin['percent_change_24h']%>%</td>
+                    <td><%= coin['percent_change_7d']%>%</td>
+                </tr>
+            </tbody>
+        <% }) %>
+        </table>
+    </div>
+        
+      
+
+
+<% include ../partials/footer %>
+
+
+
+<!-- implement bootstrap columns -->
