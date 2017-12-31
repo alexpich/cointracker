@@ -23,3 +23,6 @@ h1 {
     overflow: auto;
 }
 
+.navbar.navbar-expand-lg.navbar-light.bg-light li a {
+    text-align: right;
+}
